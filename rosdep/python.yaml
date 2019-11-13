@@ -238,14 +238,24 @@ pydocstyle:
   fedora: [python3-pydocstyle]
   gentoo: [dev-python/pydocstyle]
   openembedded: ['${PYTHON_PN}-pydocstyle@meta-ros']
-  ubuntu: [pydocstyle]
+  ubuntu:
+    artful: [pydocstyle]
+    bionic: [pydocstyle]
+    xenial: [pydocstyle]
+    zesty: [pydocstyle]
 pyflakes3:
-  debian: [pyflakes3]
+  debian:
+    buster: [pyflakes3]
+    stretch: [pyflakes3]
   fedora: [python3-pyflakes]
   gentoo: [dev-python/pyflakes]
   openembedded: ['${PYTHON_PN}-pyflakes@meta-ros']
   rhel: ['python%{python3_pkgversion}-pyflakes']
-  ubuntu: [pyflakes3]
+  ubuntu:
+    artful: [pyflakes3]
+    bionic: [pyflakes3]
+    xenial: [pyflakes3]
+    zesty: [pyflakes3]
 pymap3d-pip:
   debian:
     pip:
@@ -331,7 +341,7 @@ python:
   cygwin: [python]
   debian: [python-dev]
   fedora: [python-devel]
-  freebsd: [python2]
+  freebsd: [python]
   gentoo: [dev-lang/python]
   macports: [python26, python_select]
   openembedded: [python@openembedded-core]
@@ -961,9 +971,6 @@ python-cobs-pip:
   ubuntu:
     pip:
       packages: [cobs]
-python-collada:
-  debian: [python-collada]
-  ubuntu: [python-collada]
 python-colorama:
   arch: [python2-colorama]
   debian: [python-colorama]
@@ -1068,7 +1075,6 @@ python-crypto:
   arch: [python2-crypto]
   debian: [python-crypto]
   fedora: [python-crypto]
-  freebsd: [py27-pycrypto]
   gentoo: [dev-python/pycrypto]
   openembedded: [python-pycrypto@meta-python]
   osx:
@@ -1626,7 +1632,6 @@ python-gnupg:
   arch: [python2-gnupg]
   debian: [python-gnupg]
   fedora: [python-gnupg]
-  freebsd: [py27-python-gnupg]
   gentoo: [dev-python/python-gnupg]
   openembedded: [python-gnupg@meta-ros]
   ubuntu: [python-gnupg]
@@ -2168,7 +2173,6 @@ python-lxml:
   arch: [python2-lxml]
   debian: [python-lxml]
   fedora: [python-lxml]
-  freebsd: [py27-lxml]
   gentoo: [dev-python/lxml]
   openembedded: [python-lxml@meta-python]
   osx:
@@ -2569,7 +2573,6 @@ python-opencv:
   fedora:
     '*': null
     '29': [opencv-python]
-  freebsd: [py27-opencv]
   gentoo: ['media-libs/opencv[python]']
   openembedded: [opencv@meta-oe]
   opensuse: [python-opencv]
@@ -4106,9 +4109,25 @@ python-sphinx:
     pip:
       packages: [Sphinx]
   ubuntu:
-    '*': [python-sphinx]
+    artful: [python-sphinx]
+    bionic: [python-sphinx]
+    lucid: [python-sphinx]
+    maverick: [python-sphinx]
+    natty: [python-sphinx]
+    oneiric: [python-sphinx]
+    precise: [python-sphinx]
+    quantal: [python-sphinx]
+    raring: [python-sphinx]
+    saucy: [python-sphinx]
+    trusty: [python-sphinx]
     trusty_python3: [python3-sphinx]
+    utopic: [python-sphinx]
+    vivid: [python-sphinx]
+    wily: [python-sphinx]
+    xenial: [python-sphinx]
     xenial_python3: [python3-sphinx]
+    yakkety: [python-sphinx]
+    zesty: [python-sphinx]
 python-sphinx-argparse:
   debian:
     buster: [python-sphinx-argparse]
@@ -4956,16 +4975,6 @@ python3-catkin-pkg-modules:
   openembedded: [python3-catkin-pkg@meta-ros]
   rhel: ['python%{python3_pkgversion}-catkin_pkg']
   ubuntu: [python3-catkin-pkg-modules]
-python3-collada-pip:
-  debian:
-    pip:
-      packages: [pycollada]
-  fedora:
-    pip:
-      packages: [pycollada]
-  ubuntu:
-    pip:
-      packages: [pycollada]
 python3-coverage:
   debian: [python3-coverage]
   fedora: [python3-coverage]
@@ -5028,9 +5037,6 @@ python3-flake8:
   fedora: [python3-flake8]
   gentoo: [dev-python/flake8]
   openembedded: [python3-flake8@meta-ros]
-  rhel:
-    '*': ['python%{python3_pkgversion}-flake8']
-    '7': null
   ubuntu: [python3-flake8]
 python3-gitlab:
   debian:
@@ -5084,7 +5090,6 @@ python3-lttng:
 python3-lxml:
   debian: [python3-lxml]
   fedora: [python3-lxml]
-  freebsd: [py36-lxml]
   openembedded: [python3-lxml@meta-python]
   rhel: ['python%{python3_pkgversion}-lxml']
   ubuntu: [python3-lxml]
@@ -5145,9 +5150,6 @@ python3-opencv:
   openembedded: [opencv@meta-oe]
   ubuntu:
     bionic: [python3-opencv]
-    cosmic: [python3-opencv]
-    disco: [python3-opencv]
-    eoan: [python3-opencv]
 python3-opengl:
   debian: [python3-opengl]
   fedora: [python3-pyopengl]
@@ -5242,9 +5244,6 @@ python3-pydot:
   fedora: [python3-pydot]
   gentoo: [dev-python/pydot]
   openembedded: [python3-pydot@meta-ros]
-  rhel:
-    '*': ['python%{python3_pkgversion}-pydot']
-    '7': null
   ubuntu: [python3-pydot]
 python3-pygraphviz:
   alpine: [py3-graphviz]
@@ -5514,16 +5513,6 @@ uavcan-pip:
   ubuntu:
     pip:
       packages: [uavcan]
-urdf2webots-pip:
-  debian:
-    pip:
-      packages: [urdf2webots]
-  fedora:
-    pip:
-      packages: [urdf2webots]
-  ubuntu:
-    pip:
-      packages: [urdf2webots]
 virtualenv:
   debian: [virtualenv]
   fedora: [virtualenv]
