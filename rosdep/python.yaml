@@ -341,7 +341,7 @@ python:
   cygwin: [python]
   debian: [python-dev]
   fedora: [python-devel]
-  freebsd: [python2]
+  freebsd: [python]
   gentoo: [dev-lang/python]
   macports: [python26, python_select]
   openembedded: [python@openembedded-core]
@@ -1075,7 +1075,6 @@ python-crypto:
   arch: [python2-crypto]
   debian: [python-crypto]
   fedora: [python-crypto]
-  freebsd: [py27-pycrypto]
   gentoo: [dev-python/pycrypto]
   openembedded: [python-pycrypto@meta-python]
   osx:
@@ -1633,7 +1632,6 @@ python-gnupg:
   arch: [python2-gnupg]
   debian: [python-gnupg]
   fedora: [python-gnupg]
-  freebsd: [py27-python-gnupg]
   gentoo: [dev-python/python-gnupg]
   openembedded: [python-gnupg@meta-ros]
   ubuntu: [python-gnupg]
@@ -2175,7 +2173,6 @@ python-lxml:
   arch: [python2-lxml]
   debian: [python-lxml]
   fedora: [python-lxml]
-  freebsd: [py27-lxml]
   gentoo: [dev-python/lxml]
   openembedded: [python-lxml@meta-python]
   osx:
@@ -2576,7 +2573,6 @@ python-opencv:
   fedora:
     '*': null
     '29': [opencv-python]
-  freebsd: [py27-opencv]
   gentoo: ['media-libs/opencv[python]']
   openembedded: [opencv@meta-oe]
   opensuse: [python-opencv]
@@ -5094,7 +5090,6 @@ python3-lttng:
 python3-lxml:
   debian: [python3-lxml]
   fedora: [python3-lxml]
-  freebsd: [py36-lxml]
   openembedded: [python3-lxml@meta-python]
   rhel: ['python%{python3_pkgversion}-lxml']
   ubuntu: [python3-lxml]
